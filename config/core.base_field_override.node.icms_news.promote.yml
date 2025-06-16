@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.icms_news_article
-id: node.icms_news_article.promote
+    - node.type.icms_news
+id: node.icms_news.promote
 field_name: promote
 entity_type: node
-bundle: icms_news_article
+bundle: icms_news
 label: 'Promoted to front page'
 description: ''
 required: false

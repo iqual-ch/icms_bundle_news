@@ -5,7 +5,7 @@ dependencies:
     - language
     - node
 id: news_articles_de
-label: 'News Articles (DE)'
+label: 'News (DE)'
 type: 'canonical_entities:node'
 pattern: '/news/[node:title]'
 selection_criteria:
@@ -16,7 +16,7 @@ selection_criteria:
     context_mapping:
       node: node
     bundles:
-      icms_news_article: icms_news_article
+      icms_news: icms_news
   9bda7285-c6c6-4d5a-9c16-91467872b42b:
     id: language
     negate: false

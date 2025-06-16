@@ -23,16 +23,16 @@ config:
     paragraphs_blokkli.settings:
       'simpleConfigArray:append':
         property: enabled_types.node
-        values: [icms_news_article]
+        values: [icms_news]
   # Add the content type to the editorial workflow
     workflows.workflow.editorial:
-      addNodeTypes: [icms_news_article]
+      addNodeTypes: [icms_news]
   # Add the content type to the default view mode
   # GraphQL Core Schema
     graphql.graphql_servers.graphql:
       simple_config_update:
         schema_configuration.core_composable.fields.paragraph.field_icms_topics: field_icms_topics
-        schema_configuration.core_composable.bundles.node.icms_news_article.enabled: true
+        schema_configuration.core_composable.bundles.node.icms_news.enabled: true
         schema_configuration.core_composable.fields.paragraph.field_icms_listing_type: field_icms_listing_type
         schema_configuration.core_composable.bundles.paragraph.icms_layout_news.enabled: true
         schema_configuration.core_composable.fields.user.user_picture: user_picture

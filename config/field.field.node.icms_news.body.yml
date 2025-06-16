@@ -4,17 +4,17 @@ dependencies:
   config:
     - field.storage.node.body
     - filter.format.plain_text
-    - node.type.icms_news_article
+    - node.type.icms_news
   module:
     - text
     - tmgmt_content
 third_party_settings:
   tmgmt_content:
     excluded: false
-id: node.icms_news_article.body
+id: node.icms_news.body
 field_name: body
 entity_type: node
-bundle: icms_news_article
+bundle: icms_news
 label: Summary
 description: 'Short summary of the page. Used as meta description and teaser text, unless overridden in the corresponding fields.'
 required: false

@@ -3,26 +3,26 @@ status: true
 dependencies:
   config:
     - core.entity_view_display.comment.blokkli_node.default
-    - field.field.node.icms_news_article.body
-    - field.field.node.icms_news_article.field_blokkli_comments
-    - field.field.node.icms_news_article.field_icms_paragraphs
-    - field.field.node.icms_news_article.field_icms_teaser_image
-    - field.field.node.icms_news_article.field_icms_teaser_link_label
-    - field.field.node.icms_news_article.field_icms_teaser_pretitle
-    - field.field.node.icms_news_article.field_icms_teaser_text
-    - field.field.node.icms_news_article.field_icms_teaser_title
-    - field.field.node.icms_news_article.field_icms_topics
-    - field.field.node.icms_news_article.field_metatags
-    - node.type.icms_news_article
+    - field.field.node.icms_news.body
+    - field.field.node.icms_news.field_blokkli_comments
+    - field.field.node.icms_news.field_icms_paragraphs
+    - field.field.node.icms_news.field_icms_teaser_image
+    - field.field.node.icms_news.field_icms_teaser_link_label
+    - field.field.node.icms_news.field_icms_teaser_pretitle
+    - field.field.node.icms_news.field_icms_teaser_text
+    - field.field.node.icms_news.field_icms_teaser_title
+    - field.field.node.icms_news.field_icms_topics
+    - field.field.node.icms_news.field_metatags
+    - node.type.icms_news
   module:
     - comment
     - entity_reference_revisions
     - metatag
     - text
     - user
-id: node.icms_news_article.default
+id: node.icms_news.default
 targetEntityType: node
-bundle: icms_news_article
+bundle: icms_news
 mode: default
 content:
   body:
