@@ -2,10 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-    - language
     - node
-id: news_articles_en
-label: 'News (EN/FR)'
+id: news
+label: 'News (All languages)'
 type: 'canonical_entities:node'
 pattern: '/news/[node:title]'
 selection_criteria:
@@ -17,17 +16,5 @@ selection_criteria:
       node: node
     bundles:
       icms_news: icms_news
-  b98f3bd9-4cb4-4e85-b638-01db34b5ba77:
-    id: language
-    negate: false
-    uuid: b98f3bd9-4cb4-4e85-b638-01db34b5ba77
-    context_mapping:
-      language: 'node:langcode:language'
-    langcodes:
-      en: en
-      fr: fr
 selection_logic: and
 weight: -10
-relationships:
-  'node:langcode:language':
-    label: Language
