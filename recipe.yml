@@ -15,7 +15,7 @@ install:
 
 config:
   actions:
-  # Enable the News Paragraph type on all node types
+  # Enable the paragraph type on all node types
     field.field.node.*.field_icms_paragraphs:
       simple_config_update:
         settings.handler_settings.target_bundles.icms_layout_news: icms_layout_news
